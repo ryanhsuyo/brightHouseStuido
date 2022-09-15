@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "SpaceUser": [
+    {
+      "id": 1,
+      "name": "li",
+      "phone": "091234135132",
+      "email": "xxx.gamil.com",
+      "date": "2021-12-11"
+    },
+    {
+      "id": 2,
+      "name": "tom",
+      "phone": "091111111",
+      "email": "aaa.gamil.com",
+      "date": "2022-04-21"
+    },
+    {
+      "id": 3,
+      "name": "amy",
+      "phone": "000000",
+      "email": "ahhah.gamil.com",
+      "date": "2022-08-22"
+    }
+],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  border: 0;
+  max-width: 1200px;
+  margin: 0 auto; 
+  /* display: flex; */
+}
+@layer components{
+  .maxTitle{
+    @apply mt-20 mb-16 ml-20 font-bold text-2xl 
+  }
+  .headerBarTitle{
+    @apply mr-10 hover:text-cyan-400  text-base flex justify-center items-center
+  } 
+    
+  .homeTitle{
+      @apply mt-10 mb-10 ml-20 font-bold text-2xl
+  }
+  .homeTitleSecond{
+      @apply mt-10 mb-10 font-semibold text-lg ml-40
+  }
+  .secondTitle{
+      @apply mt-10 mb-10 font-semibold text-lg ml-40
+  }
+  .swiper{
+    @apply w-full
+  }
+  .swiper-slide{
+    @apply text-center bg-slate-600 flex justify-center items-center
+  }
+  .banner{
+    @apply h-80
+  }
+  /* about */
+  .aboutComposing{
+    @apply flex justify-center
+  }
+  .blogImg{
+    @apply w-96
+  }
+  /* rentSpace */
+
+  /* calendar style */
+  /* .weekOneDay{
+    @apply leading-8 h-24 border-l border-solid border-b-slate-300 border-t w-full text-center
+  } */
+  .week,.weekDay{
+    @apply leading-8 border-b border-solid border-b-slate-300 
+  }
+  .week{
+    @apply border-r border-solid border-r-slate-300
+  }
+  .week>div{
+    @apply relative flex-1 leading-8 h-16 border-l-[1px] border-solid border-l-slate-300 
+  }
+  .week>div:before{
+    content: attr(data-date);
+    @apply absolute top-0 right-0 text-xs text-center w-7  border-solid border-l-2 border-l-slate-300  border-b-2 border-b-slate-300 
+  }
+
+  /* .calendar{
+    h2 {
+    margin: 0;
+    font-size: 16px;
+    }
+    ul {
+      margin: 0;
+      padding: 0 0 0 1.5em;
+    }
+    
+    li {
+      margin: 1.5em 0;
+      padding: 0;
+    }
+
+    b { // used for event dates/times 
+      margin-right: 3px;
+    }
+
+    .demo-app {
+      display: flex;
+      min-height: 100%;
+      font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .demo-app-sidebar {
+      width: 300px;
+      line-height: 1.5;
+      background: #eaf9ff;
+      border-right: 1px solid #d3e2e8;
+    }
+
+    .demo-app-sidebar-section {
+      padding: 2em;
+    }
+
+    .demo-app-main {
+      flex-grow: 1;
+      padding: 3em;
+    }
+
+    .fc { // the calendar root 
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  } */
+}
